@@ -1,0 +1,236 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: url("coffee2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header {
+  background-color: #000000;
+  color: #fff;
+  padding: 38px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+	text-align: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+  font-size: 20px
+}
+
+.menu-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:#bdb76b;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  display: grid;
+  font-size: 28px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr); 
+  grid-gap: 2px; 
+}
+
+h2::after > * {
+  background-color: black;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.flavor {
+  font-weight: bold;
+}
+
+.description {
+  color:#696969;
+}
+
+.menu-item img {
+  max-width: 100px;
+  max-height: 100px;
+}
+  
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 4px 10px;
+  text-decoration: none;
+  background-color: #b8860b	;
+  color: #000000;
+  border-radius: 4px;
+}
+  
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+}	
+	
+h3 {
+	font-size: 28px;
+	position: absolute;
+	top: 100px;
+	bottom: 20px;
+    left: 5px;
+}
+
+.about {
+	font-style: italic;
+	font-weight: medium;
+	position: absolute;
+	top: 160px;
+	bottom: 20px;
+    left: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120vh;
+}
+        
+.image {
+  width: 250px;
+  height: 200px;
+  margin-top: 100px;
+  margin-left:1000px;
+  background-size: cover;
+}
+        
+.top {
+  background-image: url('aboutimage1.jpg');
+}
+        
+.center {
+  background-image: url('aboutimage2.jpg');
+}
+        
+.bottom {
+  background-image: url('aboutimage3.jpg');
+}
+.contact-us {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #bdb76b;
+  border-radius: 5px;
+}
+
+.contact-us h2 {
+  text-align: center;
+}
+
+.contact-us .contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-us .contact-info p {
+  margin: 10px 0;
+}
+
+.contact-us .social-media a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+.contact-us .social-media a:hover {
+  color: #777;
+}
+
+.contact-us form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.contact-us form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-us form input[type="submit"] {
+  background-color: #b8860b	;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+
+
